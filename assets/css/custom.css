@@ -1,10 +1,10 @@
 .orange-gradient-1 {
-  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #e91b23 0%, #ff5f65 100%);
   filter: blur(55px);
 }
 
 .orange-gradient-2 {
-  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #e91b23 0%, #eb7479 100%);
   filter: blur(55px);
 }
 

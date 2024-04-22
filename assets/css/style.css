@@ -3185,7 +3185,7 @@ h5 {
 .after\:bg-colorOrangyRed::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(254 51 10 / var(--tw-bg-opacity));
+  background-color: rgb(233 27 35 / var(--tw-bg-opacity))
 }
 
 .after\:bg-colorViolet::after {
@@ -3253,7 +3253,7 @@ h5 {
 .checked\:after\:bg-colorOrangyRed:checked::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(254 51 10 / var(--tw-bg-opacity));
+  background-color: rgb(233 27 35 / var(--tw-bg-opacity))
 }
 
 .checked\:after\:bg-\[url\(\.\.\/img\/th-1\/icon-white-checkmark-filled\.svg\)\]:checked::after {
@@ -3283,7 +3283,7 @@ h5 {
 
 .hover\:bg-colorOrangyRed:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 51 10 / var(--tw-bg-opacity));
+  background-color: rgb(233 27 35 / var(--tw-bg-opacity))
 }
 
 .hover\:bg-orange-500:hover {
@@ -3871,7 +3871,7 @@ h5 {
   }
 
   .lg\:w-\[375px\] {
-    width: 375px;
+    width: 575px;
   }
 
   .lg\:w-\[45px\] {
@@ -4178,8 +4178,9 @@ h5 {
   }
 
   .xl\:w-\[526px\] {
-    width: 526px;
+    width: 726px;
   }
+  
 
   .xl\:max-w-3xl {
     max-width: 48rem;
