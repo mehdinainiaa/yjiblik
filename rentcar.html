@@ -1,17 +1,24 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 
+
+<!-- Mirrored from www.madebydesignesia.com/themes/rentaly/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2024 12:41:50 GMT -->
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <title>Rentaly - Multipurpose Vehicle Car Rental Website Template</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="AIMass Tailwind based SASS Template" />
 
-    <!-- Favicon  -->
-    <link rel="icon" href="assets/img/favicon.png" />
+    <meta content="Rentaly - Multipurpose Vehicle Car Rental Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
 
-    <!-- Site font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <link href="assets/fonts/fonts.css" rel="stylesheet" />
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
@@ -23,20 +30,47 @@
 
     <!-- Development css -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrapauto.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/mdbauto.min.css" rel="stylesheet" type="text/css" id="mdb">
+    <link href="css/pluginsauto.css" rel="stylesheet" type="text/css">
+    <link href="css/styleauto.css" rel="stylesheet" type="text/css">
+    <link href="css/coloringauto.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Production css -->
-    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+<!-- Bootstrap JavaScript (jQuery dependency) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #dc3545;
+    }
+    /* Additional Custom Styles Here */
+</style>
 </head>
 
 <body>
-    <div class="page-wrapper relative z-[1] bg-white">
-        <!--...::: Header Start :::... -->
+    <div id="wrapper">
+        
+        <!-- page preloader begin -->
+        <div id="de-preloader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
         <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
             <div class="global-container">
                 <div class="flex items-center justify-between gap-x-8">
                     <!-- Header Logo -->
                     <a href="index.html" class="">
-                        <img src="assets/img/logo-light.png" alt="AIMass" width="96" height="24" />
+                        <img src="assets/img/logo-dark.png" alt="AIMass" width="96" height="24" />
                     </a>
                     <!-- Header Logo -->
 
@@ -52,12 +86,13 @@
                                 <div class="current-menu-title"></div>
                                 <div class="mobile-menu-close">&times;</div>
                             </div>
-                            <ul class="site-menu-main is-text-white">
+                            <ul class="site-menu-main">
+                                
                                 <li class="nav-item">
                                     <a href="index.html" class="nav-link-item">Acceuil</a>
                                 </li>
                                 <li class="nav-item nav-item-has-children">
-                                    <a href="#" class="nav-link-item drop-trigger">Yjib lik
+                                    <a href="#" class="nav-link-item drop-trigger">Yjib lik services
                                         <img class="dropdown-icon" src="assets/img/icon-black-cheveron-right.svg"
                                             alt="cheveron-right" width="16" height="16" /></a>
                                     <ul class="sub-menu" id="submenu-2">
@@ -87,13 +122,13 @@
 
                     <!-- Header User Event -->
                     <div class="flex items-center gap-6">
-                        <a href="login.html"
-                            class="hidden border-b-2 border-transparent font-bold text-white transition-all duration-300 hover:border-colorOrangyRed hover:text-colorOrangyRed lg:inline-block">Whatsapp</a>
                         <a href="signup.html"
-                            class="button hidden rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Applez-Nous</a>
+                            class="button hidden rounded-[50px] border-black bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">qui somme nous</a>
                         <!-- Responsive Offcanvas Menu Button -->
                         <div class="block lg:hidden">
-                            <button class="mobile-menu-trigger is-white">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
                                 <span></span>
                             </button>
                         </div>
@@ -102,936 +137,740 @@
                 </div>
             </div>
         </header>
-        <!--...::: Header End :::... -->
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <section id="section-hero" aria-label="section" class="full-height vertical-center" data-bgimage="url(images/background/7.jpg) bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="spacer-double sm-hide"></div>
+                        <div class="col-lg-6">
+                            <h4><span class="id-color">Plan your trip now</span></h4>
+                            <div class="spacer-10"></div>
+                            <h1>Explore the world with comfortable car</h1>
+                            <p class="lead">Embark on unforgettable adventures and discover the world in unparalleled comfort and style with our fleet of exceptionally comfortable cars.</p>
 
-        <main class="main-wrapper relative overflow-hidden">
-            <!--...::: Hero Section Start :::... -->
-            <section id="hero-section">
-                <div class="relative overflow-hidden bg-black text-white">
-                    <!-- Section Spacer -->
-                    <div class="pb-28 pt-28 md:pb-40 lg:pt-28 xl:pb-[90px] xl:pt-[122px]">
-                        <!-- Section Container -->
-                        <div class="global-container">
-                            <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,_1fr)_0.7fr]">
-                                <!-- Hero Content -->
-                                <div>
-                                    <h1
-                                        class="jos mb-6 max-w-md break-words font-clashDisplay text-5xl font-medium leading-none text-white md:max-w-full md:text-6xl lg:text-7xl xl:text-8xl xxl:text-[100px]">
-                                        Enhance your communication skills with AI
-                                    </h1>
-                                    <p class="jos mb-11">
-                                        Meet your customers on the most popular messaging channels
-                                        with an AI chatbot. It understands the customer
-                                        experience. Our AI chatbot benefits users by providing
-                                        instant support, 24/7 availability, and efficient response
-                                        to queries.
-                                    </p>
-                                    <a href="https://www.example.com"
-                                        class="jos button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">Start
-                                        Chatting for Free
-                                        <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
-                                            alt="icon-white-long-arrow-right" /></a>
+                            <a class="btn-main" href="#">Choose a Car</a>&nbsp;&nbsp;&nbsp;<a class="btn-main btn-black" href="#">Get the App</a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <img src="images/misc/car-2.png" class="img-fluid" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-cars" class="no-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <h2>Our Vehicle Fleet</h2>
+                            <p>Driving your dreams to reality with an exquisite fleet of versatile vehicles for unforgettable journeys.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div id="items-carousel" class="owl-carousel wow fadeIn">
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/jeep-renegade.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>Jeep Renegade</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>74</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">SUV</span>
+                                            </div>
+                                            <div class="d-price">
+                                                <a type="button" class="btn-main" href="car-single.html" data-toggle="modal" data-target="#exampleModal">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- Hero Content -->
-                                <!-- Hero Image -->
-                                <div class="hero-img animate-pulse overflow-hidden rounded-2xl bg-black text-right">
-                                    <img src="assets/img/th-2/hero-img-2.png" alt="hero-img-2" width="1296" height="640"
-                                        class="h-auto w-full" />
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/bmw-m5.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>BMW M2</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>36</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">Sedan</span>
+                                            </div>
+                                            <div class="d-price">
+                                                <a type="button" class="btn-main" href="car-single.html" data-toggle="modal" data-target="#exampleModal">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- Hero Image -->
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/ferrari-enzo.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>Ferarri Enzo</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>85</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">Exotic Car</span>
+                                            </div>
+                                            <div class="d-price">
+                                                <a type="button" class="btn-main" href="car-single.html" data-toggle="modal" data-target="#exampleModal">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>Ford Raptor</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>59</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">Truck</span>
+                                            </div>
+                                            <div class="d-price">
+                                                Daily rate from <span>$147</span>
+                                                <a class="btn-main" href="car-single.html">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/mini-cooper.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>Mini Cooper</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>19</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">Hatchback</span>
+                                            </div>
+                                            <div class="d-price">
+                                                Daily rate from <span>$238</span>
+                                                <a class="btn-main" href="car-single.html">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/cars/vw-polo.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4>VW Polo</h4>
+                                            <div class="d-item_like">
+                                                <i class="fa fa-heart"></i><span>79</span>
+                                            </div>
+                                            <div class="d-atr-group">
+                                                <span class="d-atr"><img src="images/icons/1-green.svg" alt="">5</span>
+                                                <span class="d-atr"><img src="images/icons/2-green.svg" alt="">2</span>
+                                                <span class="d-atr"><img src="images/icons/3-green.svg" alt="">4</span>
+                                                <span class="d-atr"><img src="images/icons/4-green.svg" alt="">Hatchback</span>
+                                            </div>
+                                            <div class="d-price">
+                                                Daily rate from <span>$106</span>
+                                                <a class="btn-main" href="car-single.html">Rent Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section aria-label="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <span class="subtitle">Why Choose Us</h2></span>
+                            <h2>Our Features</h2>
+                            <p>Discover a world of convenience, safety, and customization, paving the way for unforgettable adventures and seamless mobility solutions.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-3">
+                            <div class="box-icon s2 p-small mb20 wow fadeInRight" data-wow-delay=".5s">
+                                <i class="fa bg-color fa-trophy"></i>
+                                <div class="d-inner">
+                                    <h4>First class services</h4>
+                                    Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation.
+                                </div>
+                            </div>
+                            <div class="box-icon s2 p-small mb20 wow fadeInL fadeInRight" data-wow-delay=".75s">
+                                <i class="fa bg-color fa-road"></i>
+                                <div class="d-inner">
+                                    <h4>24/7 road assistance</h4>
+                                     Reliable support when you need it most, keeping you on the move with confidence and peace of mind.
+                                </div>
                             </div>
                         </div>
-                        <!-- Section Container -->
-                    </div>
-                    <!-- Section Spacer -->
 
-                    <!-- Background Gradient -->
-                    <div
-                        class="absolute left-1/2 top-[80%] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-1/2 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-top-shape-1.svg)] bg-cover bg-center bg-no-repeat">
-                    </div>
-                </div>
-            </section>
-            <!--...::: Hero Section End :::... -->
-
-            <!--...::: Feature Section Start :::... -->
-            <section id="feature-section">
-                <!-- Section Spacer -->
-                <div class="pb-20 pt-1 xl:pb-[130px] xl:pt-[53px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div
-                            class="jos mb-10 text-left sm:mx-auto sm:text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
-                            <h2
-                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                Remarkable features in effective conversation
-                            </h2>
+                        <div class="col-lg-6">
+                            <img src="images/misc/car.png" alt="" class="img-fluid wow fadeInUp">
                         </div>
-                        <!-- Section Content Block -->
-                        <!-- Feature List -->
-                        <ul class="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
-                            <!-- Feature Item -->
-                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.1">
-                                <div
-                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                    <img src="assets/img/th-2/icon-feature-1.svg" alt="icon-feature-1" width="49"
-                                        height="45" />
+
+                        <div class="col-lg-3">
+                            <div class="box-icon s2 d-invert p-small mb20 wow fadeInL fadeInLeft" data-wow-delay="1s">
+                                <i class="fa bg-color fa-tag"></i>
+                                <div class="d-inner">
+                                    <h4>Quality at Minimum Expense</h4>
+                                     Unlocking affordable brilliance with elevating quality while minimizing costs for maximum value.
                                 </div>
-                                <div class="flex flex-1 flex-col gap-y-5">
-                                    <div
-                                        class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
-                                        Multilingual Support
-                                    </div>
-                                    <p>
-                                        Our AI chatbots are capable for the communicating in
-                                        multilingual
-                                    </p>
+                            </div>
+                            <div class="box-icon s2 d-invert p-small mb20 wow fadeInL fadeInLeft" data-wow-delay="1.25s">
+                                <i class="fa bg-color fa-map-pin"></i>
+                                <div class="d-inner">
+                                    <h4>Free Pick-Up & Drop-Off</h4>
+                                     Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental experience.
                                 </div>
-                            </li>
-                            <!-- Feature Item -->
-                            <!-- Feature Item -->
-                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.2">
-                                <div
-                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                    <img src="assets/img/th-2/icon-feature-2.svg" alt="icon-feature-2" width="45"
-                                        height="45" />
-                                </div>
-                                <div class="flex flex-1 flex-col gap-y-5">
-                                    <div
-                                        class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
-                                        Intent Recognition
-                                    </div>
-                                    <p>
-                                        It can determine what the user is trying to respond
-                                        accordingly
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Feature Item -->
-                            <!-- Feature Item -->
-                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.3">
-                                <div
-                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
-                                    <img src="assets/img/th-2/icon-feature-3.svg" alt="icon-feature-3" width="36"
-                                        height="45" />
-                                </div>
-                                <div class="flex flex-1 flex-col gap-y-5">
-                                    <div
-                                        class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
-                                        Context Management
-                                    </div>
-                                    <p>
-                                        AI allows chatbots to refer back to a earlier messages,
-                                        answer follow-up
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Feature Item -->
-                        </ul>
-                        <!-- Feature List -->
+                            </div>
+                        </div>
                     </div>
-                    <!-- Section Container -->
                 </div>
-                <!-- Section Spacer -->
             </section>
-            <!--...::: Feature Section End :::... -->
 
-            <!-- Separator -->
-            <div class="global-container">
-                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
-            </div>
-            <!-- Separator -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-lg-3">
+                        <h2>Explore the world with comfortable car</h2>
+                        <div class="spacer-20"></div>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-trophy de-icon mb20"></i>
+                        <h4>First Class Services</h4>
+                        <p>Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-road de-icon mb20"></i>
+                        <h4>24/7 road assistance</h4>
+                        <p>Reliable support when you need it most, keeping you on the move with confidence and peace of mind.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-map-pin de-icon mb20"></i>
+                        <h4>Free Pick-Up & Drop-Off</h4>
+                        <p>Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental experience.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="section-testimonials" class="no-top no-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="de-image-text">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right"></i></div>
+                                    <h4>Excellent Service! Car Rent Service!</h4>
+                                    <blockquote>
+                                       I have been using Rentaly for my Car Rental needs for over 5 years now. I have never had any problems with their service. Their customer support is always responsive and helpful. I would recommend Rentaly to anyone looking for a reliable Car Rental provider.
+                                       <span class="by">Stepanie Hutchkiss</span>
+                                   </blockquote>
+                                </div> 
+                                <img src="./assets//img/tof2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
 
 
+                        <div class="col-md-4">
+                            <div class="de-image-text">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right"></i></div>
+                                    <h4>Excellent Service! Car Rent Service!</h4>
+                                    <blockquote>
+                                       We have been using Rentaly for our trips needs for several years now and have always been happy with their service. Their customer support is Excellent Service! and they are always available to help with any issues we have. Their prices are also very competitive.
+                                       <span class="by">Jovan Reels</span>
+                                   </blockquote>
+                                </div>
+                                <img src="./assets/img/879bef48-ac9a-4a11-b900-b8eac36134cc.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="de-image-text">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right"></i></div>
+                                    <h4>Excellent Service! Car Rent Service!</h4>
+                                    <blockquote>
+                                       Endorsed by industry experts, Rentaly is the Car Rental solution you can trust. With years of experience in the field, we provide fast, reliable and secure Car Rental services.
+                                       <span class="by">Kanesha Keyton</span>
+                                   </blockquote>
+                                </div>
+                                <img src="images/testimonial/3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
 
-            <!--...::: Content Section Start :::... -->
-            <section id="content-intregrates-section">
-                <div class="relative z-[1] overflow-hidden bg-colorCodGray text-white">
-                    <!-- Section Spacer -->
-                    <div class="py-20 xl:py-[130px]">
-                        <!-- Section Spacer -->
-                        <div class="global-container">
-                            <div
-                                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
-                                <div class="jos">
-                                    <!-- Section Content Block -->
-                                    <div class="mb-6">
-                                        <h2
-                                            class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                            Integrates your favorite channels
-                                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-news">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <h2>Latest News</h2>
+                            <p>Breaking news, fresh perspectives, and in-depth coverage - stay ahead with our latest news, insights, and analysis.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+                        
+                        <div class="col-lg-4 mb10">
+                                    <div class="bloglist s2 item">
+                                            <div class="post-content">
+                                                <div class="post-image">
+                                                    <div class="date-box">
+                                                        <div class="m">10</div>
+                                                        <div class="d">MAR</div>
+                                                    </div>
+                                                    <img alt="" src="images/news/pic-blog-1.jpg" class="lazy">
+                                                </div>
+                                                <div class="post-text">                                                    
+                                                    <h4><a href="news-single.html">Enjoy Best Travel Experience<span></span></a></h4>
+                                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur.</p>
+                                                    <a class="btn-main" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <div class="col-lg-4 mb10">
+                                    <div class="bloglist s2 item">
+                                            <div class="post-content">
+                                                <div class="post-image">
+                                                    <div class="date-box">
+                                                        <div class="m">12</div>
+                                                        <div class="d">MAR</div>
+                                                    </div>
+                                                    <img alt="" src="images/news/pic-blog-2.jpg" class="lazy">
+                                                </div>
+                                                <div class="post-text">                                                    
+                                                    <h4><a href="news-single.html">The Future of Car Rent<span></span></a></h4>
+                                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur.</p>
+                                                    <a class="btn-main" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                        <div class="col-lg-4 mb10">
+                        <div class="bloglist s2 item">
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <div class="date-box">
+                                            <div class="m">14</div>
+                                            <div class="d">MAR</div>
+                                        </div>
+                                        <img alt="" src="images/news/pic-blog-3.jpg" class="lazy">
                                     </div>
-                                    <!-- Section Content Block -->
-                                    <p class="mb-7 last:mb-0">
-                                        The ability to integrate AI chatbots into multiple
-                                        channels enables businesses to meet users where they are,
-                                        providing a consistent and convenient experience across
-                                        various touchpoints.
-                                    </p>
-                                    <ul
-                                        class="my-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]">
-                                        <li
-                                            class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
-                                            It preferred all communication channels
-                                        </li>
-                                        <li
-                                            class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
-                                            Use platform users regardless of support
-                                        </li>
+                                    <div class="post-text">                                                    
+                                        <h4><a href="news-single.html">Holiday Tips For Backpacker<span></span></a></h4>
+                                        <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur.</p>
+                                        <a class="btn-main" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="width: 277%;    margin-left: -399px; ">
+     
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel" >RESERVATION</h>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-footer">
+            <form name="contactForm" id='booking_form' class="form-s2 row g-4 on-submit-hide" method="post" action="#">
+
+                <div class="col-lg-6 d-light">
+                    <h4>Booking a Car</h4>
+                    <select name='Vehicle Type' id="vehicle_type" class="form-control">
+                      <option value='Jeep Renegade' data-src="images/cars-alt/jeep-renegade.png">Jeep Renegade - $265</option>
+                      <option value='BMW M5' data-src="images/cars-alt/bmw-m5.png">BMW M5 - $544</option>
+                      <option value='Ferrari Enzo' data-src="images/cars-alt/ferrari-enzo.png">Ferrari Enzo - $167</option>
+                      <option value='Ford Raptor' data-src="images/cars-alt/ford-raptor.png">Ford Raptor - $147</option>
+                      <option value='Mini Cooper' data-src="images/cars-alt/mini-cooper.png">Mini Cooper - $238</option>
+                      <option value='Cheverolet Camaro' data-src="images/cars-alt/vw-polo.png">Cheverolet Camaro - $245</option>
+                      <option value='Hyundai Staria' data-src="images/cars-alt/hyundai-staria.png">Hyundai Staria - $191</option>
+                      <option value='Toyota Rav 4' data-src="images/cars-alt/toyota-rav.png">Toyota Rav 4 - $114</option>
+                      <option value='Bentley' data-src="images/cars-alt/bentley.png">Bentley - $299</option>
+                      <option value='Lexus' data-src="images/cars-alt/lexus.png">Lexus - $131</option>
+                      <option value='Range Rover' data-src="images/cars-alt/range-rover.png">Range Rover - $228</option>
+                    </select>
+
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <h5>Pick Up Location</h5>
+                            <select name='Pick Up Location' id="pick_up_location" class="form-control opt-1-disable" required>
+                              <option value='New York'>Enter your pickup location</option>
+                              <option value='New York'>New York</option>
+                              <option value='Pennsylvania'>Pennsylvania</option>
+                              <option value='New Jersey'>New Jersey</option>
+                              <option value='Connecticut'>Connecticut</option>
+                              <option value='Massachusetts'>Massachusetts</option>
+                              <option value='Vermont'>Vermont</option>
+                              <option value='Rhode Island'>Rhode Island</option>
+                              <option value='New Hampshire'>New Hampshire</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h5>Destination</h5>
+                            <select name='Destination' id="destination" class="form-control opt-1-disable" required>
+                              <option value='New York'>Enter your destination</option>
+                              <option value='New York'>New York</option>
+                              <option value='PennsylDvania'>Pennsylvania</option>
+                              <option value='New Jersey'>New Jersey</option>
+                              <option value='Connecticut'>Connecticut</option>
+                              <option value='Massachusetts'>Massachusetts</option>
+                              <option value='Vermont'>Vermont</option>
+                              <option value='Rhode Island'>Rhode Island</option>
+                              <option value='New Hampshire'>New Hampshire</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h5>Pick Up Date  Time</h5>
+                            <div class="date-time-field">
+                                <input type="text" id="date-picker" name="Pick Up Date" value="">
+                                <select name="Pick Up Time" id="pickup-time">
+                                    <option value="00:00">00:00</option>
+                                    <option value="00:30">00:30</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="01:30">01:30</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="02:30">02:30</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="03:30">03:30</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="04:30">04:30</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="05:30">05:30</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="06:30">06:30</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="07:30">07:30</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="08:30">08:30</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="09:30">09:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="22:30">22:30</option>
+                                    <option value="23:00">23:00</option>
+                                    <option value="23:30">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h5>Return Date  Time</h5>
+                            <div class="date-time-field">
+                                <input type="text" id="date-picker-2" name="Return Date" value="">
+                                <select name="Return Time" id="collection-time">
+                                    <option value="00:00">00:00</option>
+                                    <option value="00:30">00:30</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="01:30">01:30</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="02:30">02:30</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="03:30">03:30</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="04:30">04:30</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="05:30">05:30</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="06:30">06:30</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="07:30">07:30</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="08:30">08:30</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="09:30">09:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="22:30">22:30</option>
+                                    <option value="23:00">23:00</option>
+                                    <option value="23:30">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- customer details -->
+
+                <div class="col-lg-6">
+                    <h4>Enter Your Details</h4>
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="field-set">
+                                <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="field-set">
+                                <input type="email" name="Email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="field-set">
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="field-set">
+                                <textarea name="message" id="message" class="form-control" placeholder="Do you have any request?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="col-lg-3">
+                    <input type='submit' id='send_message' value='Submit' class="btn-main btn-fullwidth">
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>
+                </div>
+            </form>
+        </div>.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+           
+            
+        </div>
+        <!-- content close -->
+        <a href="#" id="back-to-top"></a>
+        <!-- footer begin -->
+        <footer class="text-light">
+            <div class="container">
+                <div class="row g-custom-x">
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <a href="index.html" class="">
+                                <img src="assets/img/logo-light.png" alt="AIMass" width="96" height="24" />
+                            </a>
+                            <p> r offerings to provide you with top-notch vehicles at minimum expense.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5>Contact Info</h5>
+                            <address class="s1">
+                                <span><i class="id-color fa fa-map-marker fa-lg"></i>gelis, Marocain, giliz</span>
+                                <span><i class="id-color fa fa-phone fa-lg"></i>+0777787780</span>
+                                <span><i class="id-color fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">yjeblik@gmail.com</a></span>
+                                <span><i class="id-color fa fa-file-pdf-o fa-lg"></i><a href="#">Download Brochure</a></span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h5>Quick Links</h5>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="widget">
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Servives</a></li>
+                                        <li><a href="#">Pircing</a></li>
+                                        <li><a href="#">Contact</a></li>
                                     </ul>
-
-                                    <a href="https://www.example.com"
-                                        class="button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">Explore
-                                        Integrations
-                                        <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
-                                            alt="icon-white-long-arrow-right" /></a>
-                                </div>
-
-                                <div
-                                    class="flex flex-col gap-6 overflow-hidden rounded-[30px] bg-gradient-to-t from-[rgba(255,255,255,.1)] to-[rgba(0,0,0,0.5)] py-[124px]">
-                                    <!-- Logo Horizontal Animation -->
-                                    <div class="horizontal-slide-from-right-to-left flex w-[1161px] gap-x-6">
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-discord.svg"
-                                                alt="icon-flat-color-discord" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-github.svg"
-                                                alt="icon-flat-color-github" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                                                alt="icon-flat-color-mailchamp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-messenger.svg"
-                                                alt="icon-flat-color-messenger" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-skype.svg"
-                                                alt="icon-flat-color-skype" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-slack.svg"
-                                                alt="icon-flat-color-slack" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                                                alt="icon-flat-color-snapchat" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                                                alt="icon-flat-color-whatsapp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                                                alt="icon-flat-color-zendesk" />
-                                        </div>
-                                    </div>
-                                    <!-- Logo Horizontal Animation -->
-
-                                    <!-- Logo Horizontal Animation -->
-                                    <div class="horizontal-slide-from-left-to-right flex w-[1161px] gap-x-6">
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-discord.svg"
-                                                alt="icon-flat-color-discord" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-github.svg"
-                                                alt="icon-flat-color-github" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                                                alt="icon-flat-color-mailchamp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-messenger.svg"
-                                                alt="icon-flat-color-messenger" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-skype.svg"
-                                                alt="icon-flat-color-skype" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-slack.svg"
-                                                alt="icon-flat-color-slack" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                                                alt="icon-flat-color-snapchat" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                                                alt="icon-flat-color-whatsapp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                                                alt="icon-flat-color-zendesk" />
-                                        </div>
-                                    </div>
-                                    <!-- Logo Horizontal Animation -->
                                 </div>
                             </div>
                         </div>
-                        <!-- Section Spacer -->
                     </div>
-                    <!-- Section Spacer -->
 
-                    <div
-                        class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
-                    </div>
-                </div>
-            </section>
-            <!--...::: Content Section End :::... -->
-
-            <!--...::: Testimonial Section Start :::... -->
-            <section id="testimonial-section">
-                <!-- Section Spacer -->
-                <div class="py-20 xl:py-[130px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div
-                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
-                            <h2
-                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                Check user reviews using our AI chatbot
-                            </h2>
-                        </div>
-                        <!-- Section Content Block -->
-
-                        <!-- Testimonial Carousel -->
-                        <!-- Slider main container -->
-                        <div class="jos swiper testimonial-slider relative z-[1]">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div
-                                        class="flex flex-col gap-x-16 md:flex-row lg:gap-x-28 items-center xxl:items-baseline xl:gap-x-[134px]">
-                                        <div
-                                            class="h-auto w-[300px] self-center overflow-hidden rounded-[10px] lg:w-[375px] xl:h-[494px] xl:w-[526px]">
-                                            <img src="assets/img/th-2/testimonial-user-img-1.jpg"
-                                                alt="testimonial-img-1" width="526" height="494"
-                                                class="h-full w-full object-cover" loading="lazy" />
-                                        </div>
-                                        <div class="mt-[30px] flex-1 text-center md:text-left">
-                                            <div
-                                                class="mb-5 font-clashDisplay text-2xl font-medium leading-[1.28] tracking-[1px] lg:mb-9 lg:text-[28px]">
-                                                “Easy to use AI Chatbot with many options”
-                                            </div>
-                                            <p class="mb-9 leading-[1.33] lg:mb-[50px] lg:text-lg xl:text-2xl">
-                                                I have been using AI chatbots for several chatbots for
-                                                the past year. I learned quickly and exploring the
-                                                tool, & asking questions to Slack support. The tool is
-                                                very easy user-friendly and the support group helps
-                                                quickly and thoroughly. Keep up the good work!
-                                            </p>
-
-                                            <div class="text-[21px] font-semibold leading-[1.42]">
-                                                -Henry Fayol
-                                                <span class="mt-1 block text-lg font-normal leading-[1.66]">Professional
-                                                    blog writer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div
-                                        class="flex flex-col gap-x-16 md:flex-row lg:gap-x-28 items-center xxl:items-baseline xl:gap-x-[134px]">
-                                        <div
-                                            class="h-auto w-[300px] self-center overflow-hidden rounded-[10px] lg:w-[375px] xl:h-[494px] xl:w-[526px]">
-                                            <img src="assets/img/th-2/testimonial-user-img-1.jpg"
-                                                alt="testimonial-img-1" width="526" height="494"
-                                                class="h-full w-full object-cover" loading="lazy" />
-                                        </div>
-                                        <div class="mt-[30px] flex-1 text-center md:text-left">
-                                            <div
-                                                class="mb-5 font-clashDisplay text-2xl font-medium leading-[1.28] tracking-[1px] lg:mb-9 lg:text-[28px]">
-                                                “Easy to use AI Chatbot with many options”
-                                            </div>
-                                            <p class="mb-9 leading-[1.33] lg:mb-[50px] lg:text-lg xl:text-2xl">
-                                                I have been using AI chatbots for several chatbots for
-                                                the past year. I learned quickly and exploring the
-                                                tool, & asking questions to Slack support. The tool is
-                                                very easy user-friendly and the support group helps
-                                                quickly and thoroughly. Keep up the good work!
-                                            </p>
-
-                                            <div class="text-[21px] font-semibold leading-[1.42]">
-                                                -Henry Fayol
-                                                <span class="mt-1 block text-lg font-normal leading-[1.66]">Professional
-                                                    blog writer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="testimonial-nav">
-                                <div class="testimonial-nav-prev testimonial-nav-dir">
-                                    <img src="assets/img/th-2/icon-black-long-arrow-left.svg"
-                                        alt="icon-black-long-arrow-left" width="24" height="24" />
-                                    <img src="assets/img/th-2/icon-white-long-arrow-left.svg"
-                                        alt="icon-white-long-arrow-left" width="24" height="24" />
-                                </div>
-                                <div class="testimonial-nav-next testimonial-nav-dir">
-                                    <img src="assets/img/th-2/icon-black-long-arrow-right.svg"
-                                        alt="icon-black-long-arrow-right" width="24" height="24" />
-                                    <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
-                                        alt="icon-white-long-arrow-right" width="24" height="24" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial Carousel -->
-                    </div>
-                    <!-- Section Container -->
-                </div>
-                <!-- Section Spacer -->
-            </section>
-            <!--...::: Testimonial Section Start :::... -->
-
-            <!-- Separator -->
-            <div class="global-container">
-                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
-            </div>
-            <!-- Separator -->
-
-            <!--...::: Blog Section Start :::... -->
-            <div id="blog-section">
-                <!-- Section Spacer -->
-                <div class="py-20 xl:py-[130px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div
-                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mx-0 lg:mb-20 lg:max-w-[636px] lg:text-left">
-                            <h2
-                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                Find out more in our recent blogs
-                            </h2>
-                        </div>
-                        <!-- Section Content Block -->
-
-                        <!-- Blog List -->
-                        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                            <!-- Blog Post Single Item -->
-                            <article
-                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
-                                data-jos_delay="0.1">
-                                <!-- Blog Image -->
-                                <a href="blog-details.html"
-                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
-                                    <img src="assets/img/th-1/blog-main-1.jpg" alt="blog-main-1" width="416"
-                                        height="320"
-                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
-                                </a>
-                                <!-- Blog Image -->
-                                <!-- Blog Content -->
-                                <div class="p-6">
-                                    <h5
-                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
-                                        <a href="blog-details.html">
-                                            AI Chatbot: It essential for customer self-service</a>
-                                    </h5>
-                                    <div class="flex items-center justify-between gap-x-4">
-                                        <span>23 June 2024</span>
-                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
-                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
-                                                alt="icon-blue-long-arrow-right" width="30" height="30"
-                                                class="transition-all duration-300 group-hover:-rotate-45" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Blog Content -->
-                            </article>
-                            <!-- Blog Post Single Item -->
-                            <!-- Blog Post Single Item -->
-                            <article
-                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
-                                data-jos_delay="0.2">
-                                <!-- Blog Image -->
-                                <a href="blog-details.html"
-                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
-                                    <img src="assets/img/th-1/blog-main-2.jpg" alt="blog-main-2" width="416"
-                                        height="320"
-                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
-                                </a>
-                                <!-- Blog Image -->
-                                <!-- Blog Content -->
-                                <div class="p-6">
-                                    <h5
-                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
-                                        <a href="blog-details.html">
-                                            How to build your own AI chatbot with custom data</a>
-                                    </h5>
-                                    <div class="flex items-center justify-between gap-x-4">
-                                        <span>20 June 2024</span>
-                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
-                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
-                                                alt="icon-blue-long-arrow-right" width="30" height="30"
-                                                class="transition-all duration-300 group-hover:-rotate-45" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Blog Content -->
-                            </article>
-                            <!-- Blog Post Single Item -->
-                            <!-- Blog Post Single Item -->
-                            <article
-                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
-                                data-jos_delay="0.3">
-                                <!-- Blog Image -->
-                                <a href="blog-details.html"
-                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
-                                    <img src="assets/img/th-1/blog-main-3.jpg" alt="blog-main-3" width="416"
-                                        height="320"
-                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
-                                </a>
-                                <!-- Blog Image -->
-                                <!-- Blog Content -->
-                                <div class="p-6">
-                                    <h5
-                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
-                                        <a href="blog-details.html">
-                                            8 best AI chatbot tools for boost your business</a>
-                                    </h5>
-                                    <div class="flex items-center justify-between gap-x-4">
-                                        <span>18 June 2024</span>
-                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
-                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
-                                                alt="icon-blue-long-arrow-right" width="30" height="30"
-                                                class="transition-all duration-300 group-hover:-rotate-45" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Blog Content -->
-                            </article>
-                            <!-- Blog Post Single Item -->
-                        </div>
-                        <!-- Blog List -->
-                    </div>
-                    <!-- Section Container -->
-                </div>
-                <!-- Section Spacer -->
-            </div>
-            <!--...::: Blog Section Start :::... -->
-
-            <!--...::: FAQ Section Start :::... -->
-            <section id="faq-section">
-                <!-- Section Spacer -->
-                <div class="pb-40 xl:pb-[220px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div
-                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
-                            <h2
-                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                AI Chatbot FAQs for more information
-                            </h2>
-                        </div>
-                        <!-- Section Content Block -->
-                        <!-- Accordion-->
-                        <ul class="accordion flex flex-col gap-y-6">
-                            <!-- Accordion items -->
-                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] active"
-                                data-jos_delay="0.1">
-                                <div class="accordion-header flex items-center justify-between">
-                                    <h5
-                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
-                                        What is Artificial Intelligence (AI)?
-                                    </h5>
-                                    <div class="accordion-icon is-blue">
-                                        <img src="assets/img/plus.svg" alt="plus" />
-                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
-                                    </div>
-                                </div>
-                                <div class="accordion-content text-lg text-[#2C2C2C]">
-                                    <p>
-                                        AI chatbots work by analyzing user input, understanding
-                                        the intent behind the message, and providing relevant
-                                        responses based on pre-defined rules or machine learning
-                                        models. They can learn from user interactions to improve
-                                        over time.
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Accordion items -->
-                            <!-- Accordion items -->
-                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
-                                data-jos_delay="0.1">
-                                <div class="accordion-header flex items-center justify-between">
-                                    <h5
-                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
-                                        What are the benefits of using AI chatbots?
-                                    </h5>
-                                    <div class="accordion-icon is-blue">
-                                        <img src="assets/img/plus.svg" alt="plus" />
-                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
-                                    </div>
-                                </div>
-                                <div class="accordion-content text-lg text-[#2C2C2C]">
-                                    <p>
-                                        AI chatbots work by analyzing user input, understanding
-                                        the intent behind the message, and providing relevant
-                                        responses based on pre-defined rules or machine learning
-                                        models. They can learn from user interactions to improve
-                                        over time.
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Accordion items -->
-                            <!-- Accordion items -->
-                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
-                                data-jos_delay="0.1">
-                                <div class="accordion-header flex items-center justify-between">
-                                    <h5
-                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
-                                        Can AI chatbots understand multiple languages?
-                                    </h5>
-                                    <div class="accordion-icon is-blue">
-                                        <img src="assets/img/plus.svg" alt="plus" />
-                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
-                                    </div>
-                                </div>
-                                <div class="accordion-content text-lg text-[#2C2C2C]">
-                                    <p>
-                                        AI chatbots work by analyzing user input, understanding
-                                        the intent behind the message, and providing relevant
-                                        responses based on pre-defined rules or machine learning
-                                        models. They can learn from user interactions to improve
-                                        over time.
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Accordion items -->
-                            <!-- Accordion items -->
-                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
-                                data-jos_delay="0.1">
-                                <div class="accordion-header flex items-center justify-between">
-                                    <h5
-                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
-                                        Can AI chatbots provide personalized responses?
-                                    </h5>
-                                    <div class="accordion-icon is-blue">
-                                        <img src="assets/img/plus.svg" alt="plus" />
-                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
-                                    </div>
-                                </div>
-                                <div class="accordion-content text-lg text-[#2C2C2C]">
-                                    <p>
-                                        AI chatbots work by analyzing user input, understanding
-                                        the intent behind the message, and providing relevant
-                                        responses based on pre-defined rules or machine learning
-                                        models. They can learn from user interactions to improve
-                                        over time.
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Accordion items -->
-                            <!-- Accordion items -->
-                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
-                                data-jos_delay="0.1">
-                                <div class="accordion-header flex items-center justify-between">
-                                    <h5
-                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
-                                        How can I integrate an AI chatbot into my business or
-                                        website?
-                                    </h5>
-                                    <div class="accordion-icon is-blue">
-                                        <img src="assets/img/plus.svg" alt="plus" />
-                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
-                                    </div>
-                                </div>
-                                <div class="accordion-content text-lg text-[#2C2C2C]">
-                                    <p>
-                                        AI chatbots work by analyzing user input, understanding
-                                        the intent behind the message, and providing relevant
-                                        responses based on pre-defined rules or machine learning
-                                        models. They can learn from user interactions to improve
-                                        over time.
-                                    </p>
-                                </div>
-                            </li>
-                            <!-- Accordion items -->
-                        </ul>
-                        <!-- Accordion-->
-                    </div>
-                    <!-- Section Container -->
-                </div>
-                <!-- Section Spacer -->
-            </section>
-            <!--...::: FAQ Section End :::... -->
-        </main>
-
-        <!--...::: Footer-2 Section Start :::... -->
-        <footer id="footer-2" class="relative">
-            <div
-                class="absolute -top-[77px] left-1/2 z-10 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-bottom-shape-1.svg)] bg-cover bg-center bg-no-repeat">
-            </div>
-            <div class="relative z-[1] overflow-hidden bg-black text-white">
-                <!-- Section Container -->
-                <div class="pb-10 pt-1 lg:pt-7 xl:pt-[68px]">
-                    <!-- Footer Top -->
-                    <div>
-                        <!-- Section Container -->
-                        <div class="global-container">
-                            <!-- Section Content Block -->
-                            <div
-                                class="mx-auto mb-10 text-center md:mb-16 md:max-w-lg lg:mb-20 lg:max-w-xl xl:max-w-3xl">
-                                <h2
-                                    class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                    Let's get started and enjoy the power of AI
-                                </h2>
-                            </div>
-                            <!-- Section Content Block -->
+                    <div class="col-lg-3">
+                        <div class="flex flex-col gap-y-6">
+                            <!-- Footer Title -->
+                            <h4 class="text-[21px] font-semibold capitalize text-black">
+                                Subscribe to our newsletter
+                            </h4>
+                            <!-- Footer Title -->
                             <!-- Footer Subscriber Form -->
-                            <form action="#" method="post">
-                                <div class="relative mx-auto h-[60px] max-w-[500px]">
+                            <form action="#" method="post" class="">
+                                <div class="relative h-[50px] max-w-[300px]">
                                     <input type="email" name="newsletter-email" id="newsletter-email"
                                         placeholder="Enter your email"
-                                        class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-white bg-transparent px-[24px] pr-20 outline-none sm:pr-48"
+                                        class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
                                         required />
                                     <button type="submit"
-                                        class="absolute right-[5px] top-[50%] inline-flex h-[50px] -translate-y-[50%] items-center gap-x-[10px] rounded-[50px] bg-colorViolet px-6 transition-all duration-300 hover:bg-colorOrangyRed">
-                                        <span class="hidden sm:inline-block">Get Started</span>
+                                        class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
                                         <img src="assets/img/th-1/arrow-right-large.svg" alt="newsletter" />
                                     </button>
                                 </div>
                             </form>
                             <!-- Footer Subscriber Form -->
                         </div>
-                        <!-- Section Container -->
-                    </div>
-                    <!-- Footer Top -->
-
-                    <!-- Footer Center -->
-                    <div class="mt-16 xl:mt-20 xxl:mt-[100px]">
-                        <!-- Section Container -->
-                        <div class="global-container">
-                            <!-- Footer Widgets Block -->
-                            <div
-                                class="grid gap-x-10 gap-y-[60px] sm:grid-cols-2 md:grid-cols-4 lg:flex lg:justify-between lg:gap-x-20">
-                                <!-- Footer Widget -->
-                                <div class="flex flex-col gap-y-6">
-                                    <!-- Footer Title -->
-                                    <h4 class="text-[21px] font-semibold capitalize text-white">
-                                        Primary Pages
-                                    </h4>
-                                    <!-- Footer Title -->
-
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[10px] capitalize">
-                                        <li>
-                                            <a href="index.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="about.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">About
-                                                Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="services.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="pricing.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Widget -->
-                                <!-- Footer Widget Item -->
-                                <div class="flex flex-col gap-y-6">
-                                    <!-- Footer Title -->
-                                    <h4 class="text-[21px] font-semibold capitalize text-white">
-                                        Utility pages
-                                    </h4>
-                                    <!-- Footer Title -->
-
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[10px] capitalize">
-                                        <li>
-                                            <a href="signup.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Signup</a>
-                                        </li>
-                                        <li>
-                                            <a href="login.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="error-404.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">404
-                                                Not found</a>
-                                        </li>
-                                        <li>
-                                            <a href="reset-password.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Password
-                                                Reset</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Widget Item -->
-
-                                <!-- Footer Widget Item -->
-                                <div class="flex flex-col gap-y-6">
-                                    <!-- Footer Title -->
-                                    <h4 class="text-[21px] font-semibold capitalize text-white">
-                                        Utility pages
-                                    </h4>
-                                    <!-- Footer Title -->
-
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[10px] capitalize">
-                                        <li>
-                                            <a href="signup.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Signup</a>
-                                        </li>
-                                        <li>
-                                            <a href="login.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="error-404.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">404
-                                                Not found</a>
-                                        </li>
-                                        <li>
-                                            <a href="reset-password.html"
-                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Password
-                                                Reset</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Widget Item -->
-                                <!-- Footer Widget Item -->
-                                <div class="flex flex-col gap-y-6">
-                                    <!-- Footer Title -->
-                                    <h4 class="text-[21px] font-semibold capitalize text-white">
-                                        Socials
-                                    </h4>
-                                    <!-- Footer Title -->
-
-                                    <!-- Footer Navbar -->
-                                    <ul class="flex flex-col gap-y-[15px] capitalize">
-                                        <li>
-                                            <a href="http://www.facebook.com" class="group flex items-center gap-x-3">
-                                                <div
-                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
-                                                    <img src="assets/img/th-1/facebook-icon-white.svg"
-                                                        alt="facebook-icon-white" width="14" height="14" />
-                                                </div>
-                                                <span class="inline-block flex-1">Facebook</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.twitter.com" class="group flex items-center gap-x-3">
-                                                <div
-                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
-                                                    <img src="assets/img/th-1/twitter-icon-white.svg"
-                                                        alt="twitter-icon-white" width="14" height="14" />
-                                                </div>
-                                                <span class="inline-block flex-1">Twitter</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.instagram.com" class="group flex items-center gap-x-3">
-                                                <div
-                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
-                                                    <img src="assets/img/th-1/instagram-icon-white.svg"
-                                                        alt="instagram-icon-white" width="14" height="14" />
-                                                </div>
-                                                <span class="inline-block flex-1">Instagram</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.linkedin.com" class="group flex items-center gap-x-3">
-                                                <div
-                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
-                                                    <img src="assets/img/th-1/linkedin-icon-white.svg"
-                                                        alt="linkedin-icon-white" width="14" height="14" />
-                                                </div>
-                                                <span class="inline-block flex-1">Linkedin</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Widget Item -->
-                            </div>
-                            <!-- Footer Widgets Block -->
-                        </div>
-                        <!-- Section Container -->
-                    </div>
-                    <!-- Footer Center -->
-
-                    <!-- Footer Separator -->
-                    <div class="global-container">
-                        <div class="mb-10 mt-[60px] h-[1px] w-full bg-white"></div>
-                    </div>
-                    <!-- Footer Separator -->
-
-                    <!-- Footer Bottom -->
-                    <div>
-                        <div class="global-container">
-                            <div
-                                class="flex flex-wrap items-center justify-center gap-5 text-center md:justify-between md:text-left">
-                                <a href="index.html">
-                                    <img src="assets/img/logo-light.png" alt="logo-light" width="111" height="23" />
-                                </a>
-
-                                <p>&copy; Copyright 2024, All Rights Reserved by Mthemeus</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Bottom -->
                 </div>
-                <!-- Section Container -->
-                <!-- Background Gradient -->
-                <div
-                    class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index.html">
+                                        Copyright 2024 - Rentaly by yjeblik
+                                    </a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
-        <!--...::: Footer-2 Section End :::... -->
+        <!-- footer close -->
     </div>
-
-    <!--Vendor js-->
-    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <div id="selector">
+        <div id="demo-rtl" class="sc-opt">
+            <div class="sc-icon">RTL</div><span class="sc-val">Click to Enable</span>
+        </div>
+    </div>
+    <div id="purchase-now">
+        <a href="https://themeforest.net/cart/configure_before_adding/44940477" target="_blank"><span>$</span>25</a>
+        <div class="pn-hover">Buy Now</div>
+    </div>
+  
+        <script src="assets/js/vendors/counterup.js" type="module"></script>
     <script src="assets/js/vendors/swiper-bundle.min.js"></script>
     <script src="assets/js/vendors/fslightbox.js"></script>
     <script src="assets/js/vendors/jos.min.js"></script>
     <script src="assets/js/vendors/menu.js"></script>
 
-    <!-- Main js -->
-    <script src="assets/js/main.js"></script>
+    <script src="js/pluginsauto.js"></script>
+    <script src="js/designesiaauto.js"></script>
+
 </body>
 
+
+<!-- Mirrored from www.madebydesignesia.com/themes/rentaly/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2024 12:43:36 GMT -->
 </html>
